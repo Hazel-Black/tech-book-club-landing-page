@@ -1,90 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tech book club</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="hero-container">
+          <div class="logo-container">
+            <img
+              src="assests-container/assets/images/logo.svg"
+              alt="Tech book club logo"
+            />
+          </div>
+          <div class="hero-info-container">
+            <h1>Join the ultimate tech book club</h1>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Tech book club</title>
-</head>
-<body>
+            <p>
+              Turn your reading time into learning time with fellow tech
+              enthusiasts. Get curated recommendations, join vibrant
+              discussions, and level up your skills one chapter at a time.
+            </p>
 
-  Join the ultimate tech book club
+            <a class="hero-btn" href="#">
+              Review membership options
+              <img
+                src="assests-container/assets/images/icon-arrow-down.svg"
+                alt="down arrow"
+            /></a>
+            <div class="member-stats-container">
+              <div class="developers-img">
+                <img
+                  src="assests-container/assets/images/image-avatars.webp"
+                  alt="Developer profile images"
+                />
+              </div>
+              <div class="info-container">
+                <div class="star-container">
+                  <img
+                    src="assests-container/assets/images/icon-star.svg"
+                    alt="Gold Star"
+                  />
+                  <img
+                    src="assests-container/assets/images/icon-star.svg"
+                    alt="Gold Star"
+                  />
+                  <img
+                    src="assests-container/assets/images/icon-star.svg"
+                    alt="Gold Star"
+                  />
+                  <img
+                    src="assests-container/assets/images/icon-star.svg"
+                    alt="Gold Star"
+                  />
+                  <img
+                    src="assests-container/assets/images/icon-star.svg"
+                    alt="Gold Star"
+                  />
+                </div>
+                <div class="member-stats">
+                  <p>200+ developers joined already</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img-container">
+            <picture>
+              <source
+                media="(min-width:1440px )"
+                srcset="assests-container/assets/images/image-hero-desktop.webp"
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="assests-container/assets/images/image-hero-tablet.webp"
+              />
+              <img
+                src="assests-container/assets/images/image-hero-mobile.webp"
+                alt="Group of three people reading a book together"
+              />
+            </picture>
+          </div>
+        </div>
 
-  Turn your reading time into learning time with fellow tech enthusiasts. 
-  Get curated recommendations, join vibrant discussions, and level up your 
-  skills one chapter at a time.
+        <div class="about-container">
+          <div class="checklist-info-container">
+            <h2>Read together, grow together</h2>
+            <div class="checklist-container">
+              <div class="checklist">
+                <div class="check-mark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="checklist-info">
+                  Monthly curated tech reads selected by industry experts
+                </div>
+              </div>
+              <div class="checklist">
+                <div class="check-mark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="checklist-info">
+                  Virtual and in-person meetups for deep-dive discussions
+                </div>
+              </div>
+              <div class="checklist">
+                <div class="check-mark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="checklist-info">
+                  Early access to new tech book releases
+                </div>
+              </div>
+              <div class="checklist">
+                <div class="check-mark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="checklist-info">
+                  Author Q&A sessions with tech thought leaders
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-img">
+            <picture>
+              <source
+                media="(min-width:1440px )"
+                srcset="
+                  assests-container/assets/images/image-read-together-desktop.webp
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  assests-container/assets/images/image-read-together-tablet.webp
+                "
+              />
+              <img
+                src="assests-container/assets/images/image-read-together-mobile.webp"
+                alt="People sitting at a coffee table reading together"
+              />
+            </picture>
+          </div>
+        </div>
 
-  Review membership options
-  200+ developers joined already
+        <div class="alt-about-container">
+          <div class="aslt-about-info">
+            <h2>Not your average book club</h2>
 
-  Read together, grow together
+            <p>
+              Connect with a community that speaks your language - from
+              <b> Python</b> to <b> TypeScript</b> and everything in between.
+              Our discussions blend technical depth with practical applications.
+            </p>
+          </div>
+          <div class="floating-logos">
+            <img src="assests-container/assets/images/logos-tech.svg" alt="" />
+          </div>
+          <div class="alt-about-img">
+            <picture>
+              <source
+                media="(min-width:1440px )"
+                srcset="
+                  assests-container/assets/images/image-not-average-desktop.webp
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  assests-container/assets/images/image-not-average-tablet.webp
+                "
+              />
+              <img
+                src="assests-container/assets/images/image-not-average-mobile.webp"
+                alt="People sitting around a table with books"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="steps-container">
+          <h2>Your tech reading journey</h2>
+          <div class="steps">
+            <div class="steps-flex">
+              <div class="number">
+                <p>1</p>
+              </div>
+              <div class="arrow">
+                <img
+                  src="assests-container/assets/images/pattern-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </div>
 
-  Monthly curated tech reads selected by industry experts
-  Virtual and in-person meetups for deep-dive discussions
-  Early access to new tech book releases
-  Author Q&A sessions with tech thought leaders
+            <h3>Choose your membership tier</h3>
+          </div>
+          <div class="steps">
+            <div class="steps-flex">
+              <div class="number">
+                <p>2</p>
+              </div>
+              <div class="arrow">
+                <img
+                  src="assests-container/assets/images/pattern-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </div>
 
-  Not your average book club
+            <h3>Get your monthly book selection</h3>
+          </div>
+          <div class="steps">
+            <div class="steps-flex">
+              <div class="number">
+                <p>3</p>
+              </div>
+              <div class="arrow">
+                <img
+                  src="assests-container/assets/images/pattern-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </div>
 
-  Connect with a community that speaks your language - from Python to TypeScript and 
-  everything in between. Our discussions blend technical depth with practical applications.
+            <h3>Join our discussion forums</h3>
+          </div>
+          <div class="steps">
+            <div class="number last-number">
+              <p>4</p>
+            </div>
+            <h3>Attend exclusive meetups</h3>
+          </div>
+        </div>
 
-  Your tech reading journey
+        <div class="membership-container">
+          <h2>Membership options</h2>
+          <div class="card-container">
+            <h3>Starter</h3>
+            <div class="pricing">
+              <p>$19/month</p>
+            </div>
+            <div class="membership-checklist-container">
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">1 book/month</div>
+              </div>
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">Online forums</div>
+              </div>
+            </div>
 
-  1
-  Choose your membership tier
+            <a class="card-btn" href="#">Subscribe now</a>
+          </div>
+          <div class="card-container colorful">
+            <h3>Pro</h3>
+            <div class="pricing">
+              <p>$29/month</p>
+            </div>
 
-  2
-  Get your monthly book selection
+            <div class="membership-checklist-container">
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">2 books/month</div>
+              </div>
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">Virtual meetups</div>
+              </div>
+            </div>
 
-  3
-  Join our discussion forums
+            <a class="card-btn" href="#">Subscribe now</a>
+          </div>
+          <div class="card-container">
+            <h3>Enterprise</h3>
+            <div class="pricing">
+              <p>Custom</p>
+            </div>
+            <div class="membership-checklist-container">
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">Team access</div>
+              </div>
+              <div class="membership-checklist">
+                <div class="alt-checkmark">
+                  <img
+                    src="assests-container/assets/images/icon-check.svg"
+                    alt="Checkmark"
+                  />
+                </div>
+                <div class="membership-info">Private sessions</div>
+              </div>
+            </div>
 
-  4
-  Attend exclusive meetups
+            <a class="card-btn" href="#">Talk to us</a>
+          </div>
+        </div>
+        <div class="testemonial-container">
+          <div class="alt-star-container">
+            <img
+              src="assests-container/assets/images/icon-star.svg"
+              alt="Gold Star"
+            />
+            <img
+              src="assests-container/assets/images/icon-star.svg"
+              alt="Gold Star"
+            />
+            <img
+              src="assests-container/assets/images/icon-star.svg"
+              alt="Gold Star"
+            />
+            <img
+              src="assests-container/assets/images/icon-star.svg"
+              alt="Gold Star"
+            />
+            <img
+              src="assests-container/assets/images/icon-star.svg"
+              alt="Gold Star"
+            />
+          </div>
+          <q
+            >This book club transformed my technical reading from a solitary
+            activity into an enriching community experience. The discussions are
+            gold!</q
+          >
 
-  Membership options
+          <p>Sarah Chen, Software Architect</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-intro">
+        <h2>Ready to debug your reading list?</h2>
 
-  Starter
-  $19/month
+        <a class="footer-btn" href="#">
+          Review membership options
+          <img
+            src="assests-container/assets/images/icon-arrow-up.svg"
+            alt="up arrow"
+        /></a>
 
-  1 book/month
-  Online forums
-
-  Subscribe now
-
-  Pro
-  $29/month
-
-  2 books/month
-  Virtual meetups
-
-  Subscribe now
-
-  Enterprise
-  Custom
-
-  Team access
-  Private sessions
-
-  Talk to us
-
-  "This book club transformed my technical reading from a solitary 
-  activity into an enriching community experience. The discussions 
-  are gold!"
-
-  Sarah Chen, Software Architect
-
-  Ready to debug your reading list?
-
-  Review membership options
-  200+ developers joined already
-
-  © 2024 - Tech Book Club
-
-</body>
+        <div class="member-stats-container">
+          <div class="developers-img">
+            <img
+              src="assests-container/assets/images/image-avatars.webp"
+              alt="Developer profile images"
+            />
+          </div>
+          <div class="info-container">
+            <div class="star-container">
+              <img
+                src="assests-container/assets/images/icon-star.svg"
+                alt="Gold Star"
+              />
+              <img
+                src="assests-container/assets/images/icon-star.svg"
+                alt="Gold Star"
+              />
+              <img
+                src="assests-container/assets/images/icon-star.svg"
+                alt="Gold Star"
+              />
+              <img
+                src="assests-container/assets/images/icon-star.svg"
+                alt="Gold Star"
+              />
+              <img
+                src="assests-container/assets/images/icon-star.svg"
+                alt="Gold Star"
+              />
+            </div>
+            <div class="member-stats">
+              <p>200+ developers joined already</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-outro">
+        <div class="copyright">© 2024 - Tech Book Club</div>
+        <div class="social-links-container">
+          <div class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+            >
+              <path
+                fill="#fff"
+                d="M4.804 2.695c2.51 1.877 5.208 5.693 6.196 7.743.988-2.046 3.687-5.861 6.196-7.743 1.81-1.358 4.74-2.407 4.74.936 0 .666-.383 5.608-.606 6.411-.782 2.785-3.627 3.498-6.158 3.064 4.422.752 5.547 3.244 3.116 5.736-4.615 4.735-6.63-1.186-7.146-2.702-.073-.211-.112-.336-.142-.336-.03 0-.069.13-.142.336-.515 1.516-2.535 7.437-7.146 2.702-2.427-2.492-1.306-4.984 3.116-5.736-2.531.434-5.376-.28-6.153-3.068-.228-.804-.61-5.745-.61-6.411 0-3.343 2.93-2.294 4.739-.937v.005Z"
+              />
+            </svg>
+          </div>
+          <div class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+            >
+              <path
+                fill="#fff"
+                d="M16.25.772c.664 0 1.25.586 1.25 1.289v14.961c0 .703-.586 1.25-1.25 1.25H1.21c-.663 0-1.21-.547-1.21-1.25V2.061C0 1.358.547.772 1.21.772h15.04Zm-10.977 15v-8.32H2.695v8.32h2.578ZM3.984 6.28c.82 0 1.485-.664 1.485-1.485 0-.82-.664-1.523-1.485-1.523-.859 0-1.523.703-1.523 1.523S3.125 6.28 3.984 6.28ZM15 15.772v-4.57c0-2.227-.508-3.985-3.125-3.985-1.25 0-2.11.703-2.46 1.367h-.04V7.452h-2.46v8.32h2.577V11.67c0-1.093.195-2.148 1.563-2.148 1.328 0 1.328 1.25 1.328 2.188v4.062H15Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
